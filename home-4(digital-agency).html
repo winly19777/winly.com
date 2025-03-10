@@ -1,0 +1,1327 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home 4 | Bastun- Business Consulting HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+    <link rel="stylesheet" href="css/aos.min.css">
+    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("is_dark");
+        } 
+        if (localStorage.getItem("theme-color") === "light") {
+          document.documentElement.classList.remove("is_dark");
+        } 
+    </script>
+
+</head>
+
+
+<body class="body__wrapper">
+    <!-- pre loader area start -->
+    <div id="back__preloader">
+        <div id="back__circle_loader"></div>
+        <div class="back__loader_logo">
+            <img loading="lazy"  src="img/pre.png" alt="Preload">
+        </div>
+    </div>
+    <!-- pre loader area end -->
+    
+
+    <!-- Dark/Light area start -->
+    <div class="mode_switcher my_switcher">
+        <button id="light--to-dark-button" class="light align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512"><path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+
+            <span class="light__mode">Light</span>
+            <span class="dark__mode">Dark</span>
+        </button>
+    </div>
+    <!-- Dark/Light area end -->
+
+    <main class="main_wrapper overflow__hidden__X">
+
+        <!-- header__start -->
+        <header>
+            <div class="headerarea headerarea--4 headerarea__transparent headerarea__display__none header__sticky">
+
+                <div class="container ">
+                    <div class="headerarea__main__wrapper headerarea__main__wrapper--4 position-relative">
+
+                        <div class="headerarea__component__wrap">
+                            <div class="headerarea__component">
+                                <div class="headerarea__logo">
+                                    <a href="#"><img src="img/logo/Logo_2.png" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="headerarea__component">
+                                <div class="headerarea__right">
+                                    <div class="headerarea__icon">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="icofont-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icofont-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icofont-skype"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icofont-linkedin"></i></a>
+                                            </li>
+                                            <li class="headerarea__icon__offcanvas">
+                                                <button class="headerarea__bar__wrapper" type="button"
+                                                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                                    aria-controls="offcanvasRight">
+
+                                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="20" height="2" fill="#0A0624" />
+                                                        <rect y="7" width="20" height="2" fill="#0A0624" />
+                                                        <rect y="14" width="20" height="2" fill="#0A0624" />
+                                                    </svg>
+
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- offcanvas menu start -->
+        <div class="offcanvas offcanvas-end headerarea__offcavas__wrapper" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRight">
+            <div class="offcanvas-header headerarea__offcavas__close__button">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body headerarea__offcavas__body">
+                <form action="#" class="headerarea__offcavas__form">
+                    <div class="form-group">
+                        <input type="text" name="search-field" placeholder="Search...">
+                        <button class="side-nav-search-btn"><i class="icofont-search"></i></button>
+                    </div>
+                </form>
+                <div class="row ">
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <ul class="headerarea__offcavas__menu">
+                                <li><a href="index.html">Business Consulting</a></li>
+                                <li><a href="home-2(marketing-consulting).html">Marketing Consulting</a></li>
+                                <li><a href="home-3(corporate-business).html">Corporate Business</a></li>
+                                <li><a href="home-4(digital-agency).html">Digital Agency</a></li>
+                                <li><a href="home-5(finance-consulting).html">Finance Consulting</a></li>
+                                <li><a href="home-6(insurance).html">Insurance</a></li>
+                                <li><a href="home-7(human-resorce).html">Human Resource</a></li>
+                                <li><a href="home-8(creative-agency).html">Creative Agency</a></li>
+                                <li><a href="home-9(ecommerce).html">eCommerce</a></li>
+                                <li><a href="home-10(personal-portfolio).html">Personal Portfolio</a></li>
+                                <li><a href="home-11(seo-agency).html">SEO Agency</a></li>
+                                <li><a href="home-12(creative-portfolio).html">Creative Portfolio</a></li>
+                                <li><a href="home-13(event-conference).html">Event Conference</a></li>
+                                <li><a href="home-14(sass-app).html">Sass App</a></li>
+                                <li><a href="home-15(freelancer).html">Freelancer</a></li>
+                                <li><a href="home-16(technology).html">Technology</a></li>
+                                <li><a href="home-17(web-agency).html">Web Agency</a></li>
+                                <li><a href="home-18(travel-agency).html">Travel Agency</a></li>
+                                <li><a href="home-19(international-consulting).html">International Consulting</a></li>
+                                <li><a href="home-20(startup).html">Startup</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6">
+                        <div class="headerarea__offcavas__contact">
+                            <div class="headerarea__offcavas__contact__inner">
+                                <address class="headerarea__offcavas__address">
+                                    <span class="title">Contact Information</span>
+                                    <p>Times Square, Za #999-859 <br> Nid Road, Atlanta, USA</p>
+                                </address>
+                                <address class="headerarea__offcavas__address">
+                                    <span class="title">We're Available 24/7. Call Now.</span>
+                                    <a class="tel" href="tel:8884562790"><i class="icofont-phone"></i>(888)
+                                        456-2790</a>
+                                    <a class="tel" href="tel:12125553333"><i class="icofont-fax"></i>(121)
+                                        255-53333</a>
+                                </address>
+                            </div>
+                            <div class="headerarea__offcavas__contact__inner">
+                                <h5 class="title">Find us here</h5>
+                                <div class="headerarea__icon headerarea__offcavas__icon">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="icofont-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-skype"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-linkedin"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- offcanvas menu end -->
+
+        <!-- theme fixed shadow -->
+        <div>
+            <div class="theme__shadow__circle theme__shadow__circle--2"></div>
+            <div class="theme__shadow__circle theme__shadow__circle--2 shadow__right"></div>
+        </div>
+        <!-- theme fixed shadow -->
+
+        <!-- herobanner__section__start -->
+        <div class="herobanner d-flex align-items-center height__970 herobanner__with__transparent__header">
+            <div class="container">
+                <div class="herobanner__wrapper">
+
+                    <div class="herobanner__single">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="herobanner__content__wrapper">
+                                    <div class="herobanner__small__text">
+                                        <span>CONSULTING AGENCY</span>
+                                    </div>
+                                    <div class="herobanner__title herobanner__title--2">
+                                        <h1>BUSINESS ADVISORY SERVICE</h1>
+                                    </div>
+                                    <div class="herobanner__text herobanner__text--2">
+                                        <p>Sagittis purus amet volutpat consequat mauris nunc congue nisi and tortor.
+                                        </p>
+                                    </div>
+                                    <div class="herobanner__button">
+                                        <a class="default__button" href="#">OUR ALL SERVICES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="herobanner__img sp_top_90" data-tilt>
+                                    <img class="img-fluid" src="img/herobaner/herobanner__6.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- herobanner__section__end -->
+
+
+        <!-- brand__section__start -->
+        <div class="brand__4" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container">
+
+                <div class="brand__inner brand__inner--2">
+                    <div class="brand__single">
+                        <img src="img/brand/brand__1.png" alt="">
+                    </div>
+                    <div class="brand__single">
+                        <img src="img/brand/brand__2.png" alt="">
+                    </div>
+                    <div class="brand__single">
+                        <img src="img/brand/brand__1.png" alt="">
+                    </div>
+                    <div class="brand__single">
+                        <img src="img/brand/brand__2.png" alt="">
+                    </div>
+                    <div class="brand__single">
+                        <img src="img/brand/brand__1.png" alt="">
+                    </div>
+                    <div class="brand__single">
+                        <img src="img/brand/brand__2.png" alt="">
+                    </div>
+                    <div class="brand__single">
+                        <img src="img/brand/brand__1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand__section__end -->
+
+        <!-- about__section__start -->
+        <div class="about position-relative sp_bottom_140 sp_top_140" id="about__mission__area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="about__img__wrapper about__img__wrapper--3" data-tilt >
+                            <img class="about__img__1" src="img/about/about__3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6" data-aos="fade-up" data-aos-duration="1800">
+                        <div class="about__inner">
+
+                            <div class="section__title section__title--2 ">
+                                <div class="section__title__small">
+                                    <span>OUR ABOUT</span>
+                                </div>
+                                <div class="section__title__heading">
+                                    <h3>DISCOVER OUR BUSINESS CONSULTANCY DIFFEREENCE.</h3>
+                                </div>
+
+                            </div>
+                            <div class="about__text__2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt
+                                    ut et dolore magna aliqua consectetur adipiscing elit aliqua.</p>
+                            </div>
+
+                            <div class="about__mission__vission special__spacing">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="about__mission__vission__wrapper">
+                                            <span>
+                                                Our Mission:
+                                            </span>
+                                            <p>Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                        <div class="about__mission__vission__wrapper">
+                                            <span>
+                                                Our Mission:
+                                            </span>
+                                            <p>Lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="about__button">
+                                <a class="default__button" href="about.html">LEARN MORE ABOUT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- about__section__end-->
+
+        <!-- service__section__start -->
+        <div class="service sp_top_120 sp_bottom_130 special__spacing" id="service__area"
+            style="background: var(--pinkcolor) url(img/service/service__bg__3.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="section__title text-center sp_bottom_50">
+                            <div class="section__title__small">
+                                <span>OUR SECTION</span>
+                            </div>
+                            <div class="section__title__heading">
+                                <h3>OUR MOST POPULAR CONSULTING SERVICE.</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="service__single__4 single__transform">
+                            <div class="service__img__4">
+                                <img src="img/service/service__9.png" alt="">
+                            </div>
+                            <div class="service__heading__4">
+                                <h3><a href="service-details.html">STRATEGY PLANNING</a></h3>
+                            </div>
+                            <div class="service__content__4">
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="service__icon">
+                                <a class="direction__btn" href="service-details.html"><svg width="34" height="34"
+                                        viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="1800">
+                        <div class="service__single__4 single__transform">
+                            <div class="service__img__4">
+                                <img src="img/service/service__10.png" alt="">
+                            </div>
+                            <div class="service__heading__4">
+                                <h3><a href="service-details.html">FINANCIAL ANALYSIS</a></h3>
+                            </div>
+                            <div class="service__content__4">
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="service__icon">
+                                <a class="direction__btn" href="service-details.html"><svg width="34" height="34"
+                                        viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="2100">
+                        <div class="service__single__4 single__transform">
+                            <div class="service__img__4">
+                                <img src="img/service/service__11.png" alt="">
+                            </div>
+                            <div class="service__heading__4">
+                                <h3><a href="service-details.html">MARKET RESEARCH</a></h3>
+                            </div>
+                            <div class="service__content__4">
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="service__icon">
+                                <a class="direction__btn" href="service-details.html"><svg width="34" height="34"
+                                        viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="2400">
+                        <div class="service__single__4 single__transform">
+                            <div class="service__img__4">
+                                <img src="img/service/service__12.png" alt="">
+                            </div>
+                            <div class="service__heading__4">
+                                <h3><a href="service-details.html">GROWTH STRATEGIES</a></h3>
+                            </div>
+                            <div class="service__content__4">
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="service__icon">
+                                <a class="direction__btn" href="service-details.html"><svg width="34" height="34"
+                                        viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="service__bitton__4 text-center">
+                            <a class="default__button" href="#">OTHER SERVICE</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- service__section__end -->
+
+        <!-- team__section__start -->
+        <div class="team sp_top_140 sp_bottom_100 white__bg special__spacing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="section__title text-center sp_bottom_50">
+                            <div class="section__title__small">
+                                <span>OUR TEAM</span>
+                            </div>
+                            <div class="section__title__heading">
+                                <h3>OUR MOST POPULAR CONSULTING SERVICE.</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="team__member__single__4 common__gradient__bg single__transform">
+                            <div class="team__member__img__4">
+                                <img src="img/team/team_9.png" alt="">
+                            </div>
+                            <div class="team__member__content__4">
+                                <h6><a href="team-details.html">WADE WARREN</a></h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1700">
+                        <div class="team__member__single__4 common__gradient__bg single__transform">
+                            <div class="team__member__img__4">
+                                <img src="img/team/team_10.png" alt="">
+                            </div>
+                            <div class="team__member__content__4">
+                                <h6><a href="team-details.html">ESTHER HOWARD</a></h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="team__member__single__4 common__gradient__bg single__transform">
+                            <div class="team__member__img__4">
+                                <img src="img/team/team_11.png" alt="">
+                            </div>
+                            <div class="team__member__content__4">
+                                <h6><a href="team-details.html">WADE WARREN</a></h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="2100">
+                        <div class="team__member__single__4 common__gradient__bg single__transform">
+                            <div class="team__member__img__4">
+                                <img src="img/team/team_12.png" alt="">
+                            </div>
+                            <div class="team__member__content__4">
+                                <h6><a href="team-details.html">LESLIE ALEXANDER</a></h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="2300">
+                        <div class="team__member__single__4 common__gradient__bg single__transform">
+                            <div class="team__member__img__4">
+                                <img src="img/team/team_13.png" alt="">
+                            </div>
+                            <div class="team__member__content__4">
+                                <h6><a href="team-details.html">WADE WARREN</a></h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="2500">
+                        <div class="team__member__single__4 common__gradient__bg single__transform">
+                            <div class="team__member__img__4">
+                                <img src="img/team/team_14.png" alt="">
+                            </div>
+                            <div class="team__member__content__4">
+                                <h6><a href="team-details.html">WADE WARREN</a></h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- service__section__end -->
+
+
+
+
+        <!-- cta__area__section__start -->
+        <div class="cta__area sp_top_120 sp_bottom_330 gradient__bg position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="cta__area__wrap position-relative" >
+                            <div class="section__title section__title--4 text-center sp_bottom_30" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="section__title__small">
+                                    <span>CALL TO ACTION</span>
+                                </div>
+                                <div class="section__title__heading">
+                                    <h3>READY TO ELEVATE BUSINESS TO NEW HEIGHTS?</h3>
+                                </div>
+
+                                <div class="section__title__btn">
+                                    <a class="btn__white default__button" href="#">STARTED NOW</a>
+                                </div>
+                            </div>
+                            <div class="cta__area__img text-center" data-aos="fade-up" data-aos-duration="1500">
+                                <img src="img/freepik/free__1.png" alt="Call to action" data-tilt>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta__icon">
+                <img class="cta__img__1 ssla__animation" src="img/cta/cta__1.png" alt="">
+                <img class="cta__img__2 ssla__animation" src="img/cta/cta__2.png" alt="">
+                <img class="cta__img__3 ssla__animation" src="img/cta/cta__3.png" alt="">
+                <img class="cta__img__4 ssla__animation" src="img/cta/cta__4.png" alt="">
+            </div>
+
+        </div>
+        <!-- cta__area__section__end -->
+
+        <!-- poartfolio__section__start -->
+        <div class="portfolio sp_top_120 sp_bottom_120 white__bg special__spacing">
+            <div class="container">
+                <div class="row align-items-center sp_bottom_70">
+                    <div class="col-xxl-6 col-xl-5 col-lg-4 col-md-12 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="section__title section__title--2">
+                            <div class="section__title__small">
+                                <span>OUR POARTFOLIO</span>
+                            </div>
+                            <div class="section__title__heading">
+                                <h3> OUR COMPLETE PROJECT</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="1800">
+                        <div class="gridFilter portfolio__filter text-end gridFilter" id="myBtnContainer">
+                            <button class="btn active common__gradient__bg" onclick="filterSelection('all')"><span>ALL</span></button>
+                            <button class="btn common__gradient__bg" onclick="filterSelection('finance')"><span>FINANCE</span></button>
+                            <button class="btn common__gradient__bg" onclick="filterSelection('business')"><span>BUSINESS</span></button>
+                            <button class="btn common__gradient__bg" onclick="filterSelection('digital')"><span>DIGITAL</span></button>
+                            <button class="btn common__gradient__bg" onclick="filterSelection('startup')"><span>START UP</span></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv finance startup" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="portfolio__single">
+                            <div class="portfolio__img">
+                                <img class="img-fluid" src="img/poartfolio/portfolio-1.jpg" alt="">
+                                <div class="portfolio__content">
+                                    <h6><a href="portfolio-details.html">RISK MANAGEMENT</a></h6>
+                                    <span>Marketing Agency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv business finance" data-aos="fade-up" data-aos-duration="1700">
+                        <div class="portfolio__single">
+                            <div class="portfolio__img">
+                                <img class="img-fluid" src="img/poartfolio/portfolio-2.jpg" alt="">
+                                <div class="portfolio__content">
+                                    <h6><a href="portfolio-details.html">SKILL MANAGEMENT</a></h6>
+                                    <span>Marketing Agency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv digital" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="portfolio__single">
+                            <div class="portfolio__img">
+                                <img class="img-fluid" src="img/poartfolio/portfolio-3.jpg" alt="">
+                                <div class="portfolio__content">
+                                    <h6><a href="portfolio-details.html">TOP MANAGEMENT</a></h6>
+                                    <span>Marketing Agency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv startup digital" data-aos="fade-up" data-aos-duration="2100">
+                        <div class="portfolio__single">
+                            <div class="portfolio__img">
+                                <img class="img-fluid" src="img/poartfolio/portfolio-4.jpg" alt="">
+                                <div class="portfolio__content">
+                                    <h6><a href="portfolio-details.html">RISK MANAGEMENT</a></h6>
+                                    <span>Marketing Agency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv finance business" data-aos="fade-up" data-aos-duration="2300">
+                        <div class="portfolio__single">
+                            <div class="portfolio__img">
+                                <img class="img-fluid" src="img/poartfolio/portfolio-5.jpg" alt="">
+                                <div class="portfolio__content">
+                                    <h6><a href="portfolio-details.html">RISK MANAGEMENT</a></h6>
+                                    <span>Marketing Agency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 single__transform filterDiv business" data-aos="fade-up" data-aos-duration="2500">
+                        <div class="portfolio__single">
+                            <div class="portfolio__img">
+                                <img class="img-fluid" src="img/poartfolio/portfolio-6.jpg" alt="">
+                                <div class="portfolio__content">
+                                    <h6><a href="portfolio-details.html">RISK MANAGEMENT</a></h6>
+                                    <span>Marketing Agency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="portfolio__botton text-center">
+                            <a class="default__button" href="#">OTHER SERVICE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- poartfolio__section__end -->
+
+        <div class="border__line"></div>
+
+        <!-- testimonial__Section__start -->
+        <div class="testimonial testimonial__2 sp_bottom_140 sp_top_100 white__bg">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="section__title text-center  sp_bottom_50">
+                            <div class="section__title__small">
+                                <span>CUSTOMER REVIEW</span>
+                            </div>
+                            <div class="section__title__heading">
+                                <h3> SEE WHAT OTHER ARE SAYING</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial__slider__padding position-relative row" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="testimonial__slider__active__2 swiper">
+                        <div class="testimonial__2__wrap swiper-wrapper">
+                            <div class="col-md-3 testimonial__single__slider swiper-slide">
+                                <div class="testimonial__2__single">
+                                    <div class="testimonial__text testimonial__text--2 text-center">
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="testimonial__2__author">
+                                        <div class="testimonial__2__author__img">
+                                            <img src="img/testimonial/testimonial__3.png" alt="">
+                                        </div>
+                                        <div class="testimonial__2__author__name">
+                                            <h6><a href="#">MATTIE WARNER</a></h6>
+                                            <span class="text__gradient">Business Man</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__2__icon">
+                                        <img src="img/testimonial/testimonial__small__img__3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 testimonial__single__slider swiper-slide">
+                                <div class="testimonial__2__single">
+                                    <div class="testimonial__text testimonial__text--2 text-center">
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="testimonial__2__author">
+                                        <div class="testimonial__2__author__img">
+                                            <img src="img/testimonial/testimonial__3.png" alt="">
+                                        </div>
+                                        <div class="testimonial__2__author__name">
+                                            <h6><a href="#">MATTIE WARNER</a></h6>
+                                            <span class="text__gradient">Business Man</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__2__icon">
+                                        <img src="img/testimonial/testimonial__small__img__3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>                        
+                            <div class="col-md-3 testimonial__single__slider swiper-slide">
+                                <div class="testimonial__2__single">
+                                    <div class="testimonial__text testimonial__text--2 text-center">
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="testimonial__2__author">
+                                        <div class="testimonial__2__author__img">
+                                            <img src="img/testimonial/testimonial__3.png" alt="">
+                                        </div>
+                                        <div class="testimonial__2__author__name">
+                                            <h6><a href="#">MATTIE WARNER</a></h6>
+                                            <span class="text__gradient">Business Man</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__2__icon">
+                                        <img src="img/testimonial/testimonial__small__img__3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 testimonial__single__slider swiper-slide">
+                                <div class="testimonial__2__single">
+                                    <div class="testimonial__text testimonial__text--2 text-center">
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="testimonial__2__author">
+                                        <div class="testimonial__2__author__img">
+                                            <img src="img/testimonial/testimonial__3.png" alt="">
+                                        </div>
+                                        <div class="testimonial__2__author__name">
+                                            <h6><a href="#">MATTIE WARNER</a></h6>
+                                            <span class="text__gradient">Business Man</span>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__2__icon">
+                                        <img src="img/testimonial/testimonial__small__img__3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+                    </div>
+                <div class="slider__controls__wrap slider__controls__pagination slider__controls__arrows">
+                    <div class="swiper-button-next arrow-btn arrow-btn-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="swiper-button-prev arrow-btn arrow-btn-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.57031 5.92999L3.50031 12L9.57031 18.07" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.5 12H3.67" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+
+                </div>
+
+                <div class="testimonial__2__small__icon">
+                    <img src="img/testimonial/testimonial__small__img__4.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <!-- testimonial__Section__end -->
+
+        <!-- pricing__section__start -->
+        <div class="pricing sp_top_120 sp_bottom_120 special__spacing" style="background: var(--pinkcolor) url(img/service/service__bg__3.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="section__title text-center  sp_bottom_50">
+                            <div class="section__title__small">
+                                <span>PRICE & PLANNING</span>
+                            </div>
+                            <div class="section__title__heading">
+                                <h3>DISCOVER OUR COMPETITIVE CONSULTING RATESS</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <ul class="nav  pricing__tab" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="pricing__tab__link active" data-bs-toggle="tab" data-bs-target="#projects__one"
+                                    type="button">BILLED MONTHLY</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="pricing__tab__link" data-bs-toggle="tab"
+                                    data-bs-target="#projects__two" type="button">BILLED YEARLY</button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="tab-content tab__content__wrapper" id="myTabContent">
+
+                    <div class="tab-pane fade active show" id="projects__one" role="tabpanel"
+                        aria-labelledby="projects__one">
+                        <div class="social__wrapper">
+
+                            <div class="row">
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pricing__single__wrap" data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="common__gradient__bg pricing__gradient single__transform">
+                                        <div class="pricing__single">
+                                            <div class="pricing__small__button">
+                                                <span>BASIC PLAN</span>
+                                            </div>
+                                            <div class="common__gradient__bg pricing__inner__gradient">
+                                                <div class="pricing__single__price">
+                                                    <h6 class="text__gradient ">$80.26</h6>
+                                                    <span>Small Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing__single__text">
+                                                <ul>
+                                                    <li>Initial Consultation</li>
+                                                    <li>Strategy Development</li>
+                                                    <li>Market Research</li>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Risk Management</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pricing__single__button">
+                                                <a class="default__button common__gradient__bg" href="#"><span>GET
+                                                        STARTED</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pricing__single__wrap" data-aos="fade-up" data-aos-duration="1800">
+                                    <div class="common__gradient__bg pricing__gradient single__transform">
+                                        <div class="pricing__single">
+                                            <div class="pricing__small__button">
+                                                <span>SLIVER PLAN</span>
+                                            </div>
+                                            <div class="common__gradient__bg pricing__inner__gradient">
+                                                <div class="pricing__single__price">
+                                                    <h6 class="text__gradient ">$90.26</h6>
+                                                    <span>Mid Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing__single__text">
+                                                <ul>
+                                                    <li>Initial Consultation</li>
+                                                    <li>Strategy Development</li>
+                                                    <li>Market Research</li>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Risk Management</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pricing__single__button">
+                                                <a class="default__button common__gradient__bg" href="#"><span>GET
+                                                        STARTED</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pricing__single__wrap" data-aos="fade-up" data-aos-duration="2100">
+                                    <div class="common__gradient__bg pricing__gradient single__transform ">
+                                        <div class="pricing__single">
+                                            <div class="pricing__small__button">
+                                                <span>GOLD PLAN</span>
+                                            </div>
+                                            <div class="common__gradient__bg pricing__inner__gradient">
+                                                <div class="pricing__single__price">
+                                                    <h6 class="text__gradient ">$95.26</h6>
+                                                    <span>Big Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing__single__text">
+                                                <ul>
+                                                    <li>Initial Consultation</li>
+                                                    <li>Strategy Development</li>
+                                                    <li>Market Research</li>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Risk Management</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pricing__single__button">
+                                                <a class="default__button common__gradient__bg" href="#"><span>GET
+                                                        STARTED</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pricing__single__wrap" data-aos="fade-up" data-aos-duration="2400">
+
+                                    <div class="common__gradient__bg pricing__gradient single__transform">
+                                        <div class="pricing__single pricing__special">
+                                            <div class="pricing__special__badge">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="55"
+                                                    viewBox="0 0 36 55" fill="none">
+                                                    <path
+                                                        d="M14.8596 32.0792L18.1387 30.3798L21.4161 32.0742L20.7867 28.4819L23.4394 25.9344L19.7738 25.4119L18.134 22.1436L16.496 25.4149L12.832 25.9407L15.4843 28.4835L14.8596 32.0792Z"
+                                                        fill="#07B318" />
+                                                    <path d="M0 0H36V6.55273H0V0Z" fill="#07B318" />
+                                                    <path
+                                                        d="M0 55L18 45.5225L36 55V9.77539H0V55ZM14.3229 22.4692L18.1308 14.8611L21.9469 22.4663L30.4709 23.6811L24.306 29.6056L25.7663 37.9657L18.1389 34.0208L10.5166 37.9707L11.9693 29.6103L5.79759 23.6937L14.3229 22.4692Z"
+                                                        fill="#07B318" />
+                                                </svg>
+                                            </div>
+                                            <div class="pricing__small__button">
+                                                <span>POPULAR PLAN</span>
+                                            </div>
+
+                                            <div class="common__gradient__bg pricing__inner__gradient">
+                                                <div class="pricing__single__price">
+                                                    <h6 class="text__gradient ">$99.99</h6>
+                                                    <span>All Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing__single__text">
+                                                <ul>
+                                                    <li>Initial Consultation</li>
+                                                    <li>Strategy Development</li>
+                                                    <li>Market Research</li>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Risk Management</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pricing__single__button">
+                                                <a class="default__button common__gradient__bg" href="#"><span>GET
+                                                        STARTED</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="projects__two" role="tabpanel" aria-labelledby="projects__two">
+                        <div class="social__wrapper">
+                            <div class="row">
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pricing__single__wrap" data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="common__gradient__bg pricing__gradient single__transform">
+                                        <div class="pricing__single">
+                                            <div class="pricing__small__button">
+                                                <span>BASIC PLAN</span>
+                                            </div>
+                                            <div class="common__gradient__bg pricing__inner__gradient">
+                                                <div class="pricing__single__price">
+                                                    <h6 class="text__gradient ">$380.26</h6>
+                                                    <span>Small Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing__single__text">
+                                                <ul>
+                                                    <li>Initial Consultation</li>
+                                                    <li>Strategy Development</li>
+                                                    <li>Market Research</li>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Risk Management</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pricing__single__button">
+                                                <a class="default__button common__gradient__bg" href="#"><span>GET
+                                                        STARTED</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pricing__single__wrap" data-aos="fade-up" data-aos-duration="1800">
+                                    <div class="common__gradient__bg pricing__gradient single__transform">
+                                        <div class="pricing__single">
+                                            <div class="pricing__small__button">
+                                                <span>SLIVER PLAN</span>
+                                            </div>
+                                            <div class="common__gradient__bg pricing__inner__gradient">
+                                                <div class="pricing__single__price">
+                                                    <h6 class="text__gradient ">$390.26</h6>
+                                                    <span>Mid Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing__single__text">
+                                                <ul>
+                                                    <li>Initial Consultation</li>
+                                                    <li>Strategy Development</li>
+                                                    <li>Market Research</li>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Risk Management</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pricing__single__button">
+                                                <a class="default__button common__gradient__bg" href="#"><span>GET
+                                                        STARTED</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pricing__single__wrap" data-aos="fade-up" data-aos-duration="2100">
+                                    <div class="common__gradient__bg pricing__gradient single__transform ">
+                                        <div class="pricing__single">
+                                            <div class="pricing__small__button">
+                                                <span>GOLD PLAN</span>
+                                            </div>
+                                            <div class="common__gradient__bg pricing__inner__gradient">
+                                                <div class="pricing__single__price">
+                                                    <h6 class="text__gradient ">$395.26</h6>
+                                                    <span>Big Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing__single__text">
+                                                <ul>
+                                                    <li>Initial Consultation</li>
+                                                    <li>Strategy Development</li>
+                                                    <li>Market Research</li>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Risk Management</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pricing__single__button">
+                                                <a class="default__button common__gradient__bg" href="#"><span>GET
+                                                        STARTED</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 pricing__single__wrap" data-aos="fade-up" data-aos-duration="2400">
+
+                                    <div class="common__gradient__bg pricing__gradient single__transform">
+                                        <div class="pricing__single pricing__special">
+                                            <div class="pricing__special__badge">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="55"
+                                                    viewBox="0 0 36 55" fill="none">
+                                                    <path
+                                                        d="M14.8596 32.0792L18.1387 30.3798L21.4161 32.0742L20.7867 28.4819L23.4394 25.9344L19.7738 25.4119L18.134 22.1436L16.496 25.4149L12.832 25.9407L15.4843 28.4835L14.8596 32.0792Z"
+                                                        fill="#07B318" />
+                                                    <path d="M0 0H36V6.55273H0V0Z" fill="#07B318" />
+                                                    <path
+                                                        d="M0 55L18 45.5225L36 55V9.77539H0V55ZM14.3229 22.4692L18.1308 14.8611L21.9469 22.4663L30.4709 23.6811L24.306 29.6056L25.7663 37.9657L18.1389 34.0208L10.5166 37.9707L11.9693 29.6103L5.79759 23.6937L14.3229 22.4692Z"
+                                                        fill="#07B318" />
+                                                </svg>
+                                            </div>
+                                            <div class="pricing__small__button">
+                                                <span>POPULAR PLAN</span>
+                                            </div>
+
+                                            <div class="common__gradient__bg pricing__inner__gradient">
+                                                <div class="pricing__single__price">
+                                                    <h6 class="text__gradient ">$399.99</h6>
+                                                    <span>All Business</span>
+                                                </div>
+                                            </div>
+                                            <div class="pricing__single__text">
+                                                <ul>
+                                                    <li>Initial Consultation</li>
+                                                    <li>Strategy Development</li>
+                                                    <li>Market Research</li>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Risk Management</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pricing__single__button">
+                                                <a class="default__button common__gradient__bg" href="#"><span>GET
+                                                        STARTED</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- pricing__section__end -->
+
+        <!-- blog__section__4__start -->
+
+        <div class="blog__4 sp_top_120 sp_bottom_120 white__bg special__spacing">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-12 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="section__title  section__title--2 blog__4__padding__right">
+                            <div class="section__title__small">
+                                <span>BLOG & PLANNING</span>
+                            </div>
+                            <div class="section__title__heading">
+                                <h3>IN-DEPTH ANALYSIS AND DISCUSSION</h3>
+                            </div>
+                            <div class="blog__4__section__title__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore.</p>
+                            </div>
+                            <div class="section__title__button">
+                                <a class="default__button" href="#">VIEW ARCHIVE POST</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="1800">
+                        <div class="blog__4__single single__transform">
+                            <div class="blog__4__img">
+                                <img src="img/blog/blog__7.png" alt="">
+                            </div>
+                            <div class="blog__4__time">
+                                <p>08 May, 2024</p>
+                            </div>
+                            <div class="blog__4__heading">
+                                <h6><a href="#">A BEGINNER 'S GUIDE...</a></h6>
+                            </div>
+                            <div class="blog__4__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.</p>
+                            </div>
+                            <div class="blog__4__button">
+                                <a class="default__button" href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="2100">
+                        <div class="blog__4__single single__transform">
+                            <div class="blog__4__img">
+                                <img src="img/blog/blog__8.png" alt="">
+                            </div>
+                            <div class="blog__4__time">
+                                <p>08 May, 2024</p>
+                            </div>
+                            <div class="blog__4__heading">
+                                <h6><a href="#">THE AWESOME 'S GUIDE...</a></h6>
+                            </div>
+                            <div class="blog__4__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.</p>
+                            </div>
+                            <div class="blog__4__button">
+                                <a class="default__button" href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- blog__section__4__end -->
+
+        <!-- footer__section__start -->
+        <div class="footer__4 position-relative sp_top_140 sp_bottom_140" id="footer__area__2"
+            style="background: url(img/footer/footer__bg__2.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="footer__4__wrapper">
+                            <div class="footer__4__small__text">
+                                <span>RADY TO ELEVATE YOUR BUSINESS TO NEW HEIGHTS?</span>
+                            </div>
+                            <div class="footer__4__heading">
+                                <h1>MAXIMIZE YOUR BUSINESSS GROWTH TRAJECTORY WITH OUR STRATEGIC CONSULTING.</h1>
+                            </div>
+                            <div class="footer__4__button">
+                                <a class="default__button" href="#">START NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- footer__section__end -->
+        <!-- copyright__section__start -->
+        <div class="copyright copyright--4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="copyright__left">
+                            <p>Copyright © 2024 <a href="#">BASTUN.</a> All Right Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="headerarea__icon copyright__icon">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="icofont-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-skype"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-linkedin"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright__arrow">
+                <a href="#"><i class="icofont-arrow-up"></i></a>
+            </div>
+        </div>
+        <!-- copyright__section__end -->
+
+    </main>
+
+    <!-- JS here -->
+    <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-3.6.0.min.js"></script> -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/isotope.pkgd.min.js"></script> -->
+    <!-- <script src="js/jquery.meanmenu.min.js"></script> -->
+    <!-- <script src="js/ajax-form.js"></script> -->
+    <!-- <script src="js/wow.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script> -->
+    <!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+    <!-- <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script> -->
+    <script src="js/filter.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
+        } 
+        if (localStorage.getItem("theme-color") === "light") {
+          document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
+        } 
+    </script>
+
+</body>
+
+</html>
