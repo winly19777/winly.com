@@ -2,7 +2,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    &__display__none{
+        &__display__none{
         @media #{$device-md} {
             display: none;
         } 

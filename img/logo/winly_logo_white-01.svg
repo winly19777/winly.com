@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層_1" xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.2" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 118.31 18.01">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <linearGradient id="_未命名漸層_2" data-name="未命名漸層 2" x1="0" y1="9.01" x2="34.66" y2="9.01" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#e95452"/>
+      <stop offset=".85" stop-color="#1a2d8d"/>
+    </linearGradient>
+  </defs>
+  <polygon points="0 0 10.29 18.01 10.3 0 34.66 0 24.37 18.01 5.86 0 0 0" fill="url(#_未命名漸層_2)"/>
+  <g>
+    <path d="M39.3.88h3.66l2.45,6.76c.4,1.11.84,2.87.89,3.04.02-.1.49-1.93,1.04-3.04l3.24-6.91h.35l3.29,6.91c.52,1.09.99,2.87,1.04,3.04.02-.1.47-1.91.89-3.04l2.43-6.76h3.37l-6.11,16.98h-.35l-3.79-8.12c-.42-.89-.89-2.33-.94-2.48-.02.07-.54,1.56-.97,2.48l-3.94,8.12h-.35L39.3.88Z" fill="#fff"/>
+    <path d="M65.54.88h3.47v16.83h-3.47V.88Z" fill="#fff"/>
+    <path d="M78.8,9.89c-.84-.79-2-2.3-2-2.3,0,0,.25,1.86.25,3.07v7.05h-3.24V.73h.35l8.49,7.97c.82.77,1.98,2.3,1.98,2.3,0,0-.22-1.91-.22-3.07V.88h3.24v16.98h-.35l-8.49-7.97Z" fill="#fff"/>
+    <path d="M92.39.88h3.47v13.79h7.62v3.04h-11.09V.88Z" fill="#fff"/>
+    <path d="M109.37,11.54l-5.84-10.67h3.89l2.38,4.58c.62,1.19,1.36,3.17,1.36,3.17,0,0,.69-1.93,1.31-3.17l2.28-4.58h3.56l-5.45,10.42v6.41h-3.49v-6.16Z" fill="#fff"/>
+  </g>
+</svg>
