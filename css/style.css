@@ -1005,7 +1005,7 @@ li {
   color: var(--whiteColor);
   font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
   border-radius: var(--borderRadius);
   font-family: var(--buttonFont);
@@ -1029,6 +1029,7 @@ li {
   -webkit-filter: brightness(150%);
   filter: brightness(150%);
   color: var(--whiteColor);
+  font-weight: 600;
 }
 
 .default__button.btn__blue {
@@ -2018,8 +2019,8 @@ button.default__button {
   height: 100px;
   border-style: solid;
   border-width: 5px;
-  border-top-color: #465fe9;
-  border-right-color: #465fe9;
+  border-top-color: var(--themeColor-Orange);
+  border-right-color: var(--themeColor-Orange);
   border-bottom-color: #d5eaff;
   border-left-color: #d5eaff;
   border-radius: 50%;
@@ -4451,6 +4452,7 @@ button.default__button {
   border-radius: var(--borderRadius);
   position: relative;
   overflow: hidden;
+  transition: var(--transition);
 }
 
 @media (min-width: 1366px) and (max-width: 1499px) {
@@ -4493,6 +4495,16 @@ button.default__button {
 .service__single__wraper:hover .service__img__bg img {
   opacity: 1;
   top: -60px;
+}
+
+.service__single__wraper:hover .service__icon a svg path {
+  stroke:#0A0624;
+  transition: var(--transition);
+} 
+
+.service__single__wraper.active{
+  background: var(--gradientColor);
+  transition: var(--transition);
 }
 
 .service__single__inner {
@@ -4597,7 +4609,13 @@ button.default__button {
   display: inline-block;
   text-align: center;
   font-size: 30px;
+  outline: 1px solid var(--blackColor);
 }
+
+.service__icon a svg path {
+  stroke: var(--blackColor);
+  }
+
 
 .service__single__wraper--2 {
   padding: 45px 40px 45px 45px;
@@ -7301,6 +7319,10 @@ button.default__button {
   }
 }
 
+.project__bottom__button {
+  text-align: center; 
+}
+
 @media (max-width: 767px) {
   .project__bottom__button {
     margin-bottom: 30px;
@@ -7403,6 +7425,7 @@ button.default__button {
 
 .project__bottom__text {
   padding-left: 70px;
+  margin: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -8598,9 +8621,13 @@ button.default__button {
   z-index: -1;
 }
 
-/* Masonry 容器 */
+/* 共通樣式 */
 .masonry {
   position: relative;
+}
+
+/* Masonry 網格樣式 */
+.masonry.masonry-grid {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -8623,7 +8650,6 @@ button.default__button {
   background-color: #fff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-
 }
 
 .masonry-item::after {
@@ -8650,6 +8676,137 @@ button.default__button {
   transform: scale(1.1);
 }
 
+
+/* 相片牆 start */
+/* 輪播圖樣式 */
+.carousel-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-content {
+  position: relative;
+  height: 70vh;
+  max-height: 600px;
+  user-select: none;
+  touch-action: pan-y; /* 允許垂直方向的滑動，但限制水平滑動被瀏覽器處理 */
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-slide .masonry-item {
+  width: 90%;
+  height: auto;
+  max-height: 100%;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* 加入滑動過渡動畫效果 */
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutToLeft {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slideOutToRight {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+/* 滑動狀態類別 */
+.slide-in-right {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.5s forwards;
+}
+
+.slide-out-left {
+  animation: slideOutToLeft 0.5s forwards;
+}
+
+.slide-out-right {
+  animation: slideOutToRight 0.5s forwards;
+}
+
+/* 響應式設置 */
 @media (min-width: 1500px) {
   .masonry {
     --columns: 5;
@@ -8674,6 +8831,7 @@ button.default__button {
   }
 }
 
+/* 相片牆 End */
 
 @media (min-width: 768px) and (max-width: 991px) {
   .testimonial__img img {
