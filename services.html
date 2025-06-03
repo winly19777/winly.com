@@ -1,0 +1,697 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>服務項目 | WINLY</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add("is_dark");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.documentElement.classList.remove("is_dark");
+        } 
+    </script>
+
+</head>
+
+
+<body class="body__wrapper">
+    <!-- Dark/Light area start -->
+    <div class="mode_switcher my_switcher">
+        <button id="light--to-dark-button" class="light align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512">
+                <path
+                    d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="32" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                    d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94" />
+                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-miterlimit="10" stroke-width="32" />
+            </svg>
+
+            <span class="light__mode">Light</span>
+            <span class="dark__mode">Dark</span>
+        </button>
+    </div>
+    <!-- Dark/Light area end -->
+
+
+
+    <main class="main_wrapper overflow-hidden">
+
+        <!-- header__start -->
+        <header>
+            <div class="headerarea headerarea--1 headerarea__transparent header__sticky main__header">
+                <div class="container desktop__menu__wrapper">
+                    <div class="headerarea__main__wrapper position-relative">
+
+                        <div class="headerarea__component__wrap">
+                            <div class="headerarea__component">
+                                <div class="headerarea__logo">
+                                    <a href="index.html"><img src="img/logo/winly_logo_white.svg" alt="Winly Logo"
+                                            width="150" height="auto"></a>
+                                </div>
+                            </div>
+                            <div class="headerarea__component">
+                                <div class="headerarea__main__menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a class="headerarea__has__dropdown" href="index.html">首頁</a></li>
+
+                                            <li class="headerarea__common__dropdown">
+                                                <a class="headerarea__has__dropdown" href="services.html">服務項目<i
+                                                        class="icofont-long-arrow-down"></i> </a>
+                                                <ul class="headerarea__submenu headerarea__submenu--five--wrap">
+                                                    <li><a href="services.html">系統整合集成</a></li>
+                                                    <li><a href="services.html?tab=two">演繹規劃製作</a></li>
+                                                    <li><a href="services.html?tab=three">創新數位媒體</a></li>
+                                                </ul>
+
+                                            </li>
+                                            <li
+                                                class="headerarea__common__dropdown headerarea__mega__menu position-static">
+                                                <a class="headerarea__has__dropdown" href="#">歷年實績<i
+                                                        class="icofont-long-arrow-down"></i></a>
+                                                <div class="headerarea__submenu headerarea__mega__menu__wrapper">
+                                                    <div class="row">
+                                                        <div class="col-6 headerarea__mega__menu__single__wrap">
+                                                            <h4 class="headerarea__mega__menu__title"><a href="#">演繹製作規劃
+                                                                </a></h4>
+                                                            <ul class="headerarea__mega__menu__item">
+                                                                <li><a href="#">演唱會 </a></li>
+                                                                <li><a href="#">廣播電視</a></li>
+                                                                <li><a href="#">大型活動</a></li>
+                                                                <li><a href="#">藝文活動</a></li>
+                                                                <li><a href="#">宗教活動</a></li>
+                                                                <li><a href="#">商業活動</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-6 headerarea__mega__menu__single__wrap">
+                                                            <h4 class="headerarea__mega__menu__title"><a href="#">系統整合集合
+                                                                </a></h4>
+                                                            <ul class="headerarea__mega__menu__item">
+                                                                <li><a href="#">飯店</a></li>
+                                                                <li><a href="#">餐廳</a></li>
+                                                                <li><a href="#">展演空間</a></li>
+                                                                <li><a href="#">宗教場所</a></li>
+                                                                <li><a href="#">商業空間</a></li>
+                                                                <li><a href="#">公家機關</a></li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="headerarea__common__dropdown">
+                                                <a class="headerarea__has__dropdown" href="#">代理品牌
+                                                    <i class="icofont-long-arrow-down"></i></a>
+                                                <ul class="headerarea__submenu headerarea__submenu--five--wrap">
+                                                    <li><a href="#">HK</a></li>
+                                                    <li><a href="#">VOID</a></li>
+                                                    <li><a href="#">Sommer</a></li>
+                                                </ul>
+
+                                            </li>
+
+
+                                            <li><a href="#">最新消息</a></li>
+                                            <li><a href="contact.html">聯絡我們</a></li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mob_menu_wrapper container-fluid">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__header--menu__open ">
+                            <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                        stroke-miterlimit="10" stroke-width="32"
+                                        d="M80 160h352M80 256h352M80 352h352" />
+                                </svg>
+                                <span class="visually-hidden"></span>
+                            </a>
+                        </div>
+                        <div class="mobile__log">
+                            <div class="mobile__log--title"><a class="mobile__log--link" href="index.html">
+                                    <img class="mobile__log--img" src="img/logo/winly_logo_white.svg" alt="winly logo"
+                                        width="200" height="auto">
+                                </a></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- header__end -->
+
+
+        <!-- Start 手機板 header menu -->
+        <div class="offcanvas__header">
+            <div class="offcanvas__inner">
+                <div class="offcanvas__logo">
+                    <button class="offcanvas__close--btn" data-offcanvas>關閉</button>
+                </div>
+                <nav class="offcanvas__menu">
+                    <ul class="offcanvas__menu_ul">
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="index.html">首頁</a>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="services.html">服務項目</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                        class="offcanvas__sub_menu_item">系統整合集成</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                        class="offcanvas__sub_menu_item">演繹規畫製作</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href=""
+                                        class="offcanvas__sub_menu_item">創新數位媒體</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#">歷年實績</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                        class="offcanvas__sub_menu_item">演繹規畫製作</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                        class="offcanvas__sub_menu_item">數位整合集合</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#">代理品牌</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="#" class="offcanvas__sub_menu_item">HK</a>
+                                </li>
+                                <li class="offcanvas__sub_menu_li"><a href="#" class="offcanvas__sub_menu_item">VOID</a>
+                                </li>
+                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                        class="offcanvas__sub_menu_item">Sommer</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.html">最新消息</a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.html">聯絡我們</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- End 手機板 header menu -->
+
+        <!-- 麵包頁__start -->
+        <div class="breadcrumbarea aos-init aos-animate" data-aos="fade-up"
+            style="background: url(img/about/about__bg__1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="breadcrumbarea__content__wraper">
+                            <div class="breadcrumbarea__title">
+                                <h2 class="heading">服務項目</h2>
+                            </div>
+                            <div class="breadcrumbarea__inner">
+                                <ul>
+                                    <li>穩立擁有頂級設備、專業人員、完整規劃與全面的服務，在台灣建立最佳的口碑與風評。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumbarea__end -->
+
+        <!-- 服務項目 Strategy -->
+        <div class="pricing business__strategy sp_top_120 sp_bottom_120 special__spacing"
+            style="background: url(img/service/service__bg__3.png);">
+            <div class="container">
+                <!-- <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="section__title text-center  sp_bottom_50">
+                            <div class="section__title__heading">
+                                <h3>服務項目?</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <div class="tab-content tab__content__wrapper" id="myTabContent">
+
+                    <div class="row">
+                        <div class="col-xl-12" data-aos="fade-up" data-aos-duration="800">
+                            <ul class="nav  pricing__tab" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="pricing__tab__link active" data-bs-toggle="tab"
+                                        data-bs-target="#services__projects__one" type="button">系統整合集成</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="pricing__tab__link" data-bs-toggle="tab"
+                                        data-bs-target="#services__projects__two" type="button">演繹規劃製作</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="pricing__tab__link" data-bs-toggle="tab"
+                                        data-bs-target="#services__projects__three" type="button">創新數位媒體</button>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade active show" id="services__projects__one" role="tabpanel"
+                        aria-labelledby="projects__one">
+                        <div class="social__wrapper">
+
+                            <div class="row align-items-center">
+
+                                <div class="col-xl-4 col-lg-12 col-sm-12 col-12">
+                                    <div class="section__title  section__title--2">
+
+                                        <div class="section__title__heading sp_bottom_20">
+                                            <h3>品牌代理整合</h3>
+                                        </div>
+                                        <div class="blog__4__section__title__text">
+                                            <p>代理國際知名品牌，為您提供最好的服務品質，挑選最適合的設備。</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 row" data-aos="fade-up"
+                                    data-aos-duration="1800">
+
+                                    <div class="service__single__inner">
+                                        <div class="service__img">
+                                            <img class="service__icon__inner" src="img/service/images/icon_01.png"
+                                                alt="">
+                                            <img class="service__icon__inner" src="img/service/images/icon_03.png"
+                                                alt="">
+                                            <img class="service__icon__inner" src="img/service/images/icon_05.png"
+                                                alt="">
+                                            <img class="service__icon__inner" src="img/service/images/icon_07.png"
+                                                alt="">
+                                            <img class="service__icon__inner" src="img/service/images/icon_12.png"
+                                                alt="">
+                                            <img class="service__icon__inner" src="img/service/images/icon_13.png"
+                                                alt="">
+                                            <img class="service__icon__inner" src="img/service/images/icon_14.png"
+                                                alt="">
+                                            <img class="service__icon__inner" src="img/service/images/icon_15.png"
+                                                alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="section__title__heading sp_bottom_40">
+                                            <h3>系統整合集成</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1800">
+                                    <div
+                                        class="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
+                                        <div class="service__single__inner">
+                                            <div class="service__img">
+                                                <img src="img/service/service__7.png" alt="">
+                                            </div>
+                                            <div class="service__content">
+                                                <div class="service__heading">
+                                                    <h5><a href="service-details.html">設計規劃</a></h5>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>依據與客戶的深入溝通，結合多年實務經驗，準確掌握需求，提供高品質、可執行的專案規劃與整合設計。</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1800">
+                                    <div
+                                        class="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
+                                        <div class="service__single__inner">
+                                            <div class="service__img">
+                                                <img src="img/service/service__7.png" alt="">
+                                            </div>
+                                            <div class="service__content">
+                                                <div class="service__heading">
+                                                    <h5><a href="service-details.html">系統安裝</a></h5>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>具備燈光、音響、視訊、環控等系統多年施工經驗，掌握工程品質與效率，並提供完整的安裝與售後保固服務。</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="2100">
+                                    <div
+                                        class="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
+                                        <div class="service__single__inner">
+                                            <div class="service__img">
+                                                <img src="img/service/service__8.png" alt="">
+                                            </div>
+                                            <div class="service__content">
+                                                <div class="service__heading">
+                                                    <h5><a href="service-details.html">專業服務</a></h5>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>提供多元專業服務，涵蓋系統設計與規劃、音場空間分析、整合系統建置，以及各類技術支援與顧問服務。</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  演繹  -->
+                    <div class="tab-pane fade" id="services__projects__two" role="tabpanel"
+                        aria-labelledby="projects__two">
+                        <div class="social__wrapper">
+                            <div class="row align-items-center">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1500">
+                                    <div
+                                        class="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
+                                        <div class="service__single__inner">
+                                            <div class="service__img">
+                                                <img src="img/service/service__6.png" alt="">
+                                            </div>
+                                            <div class="service__content">
+                                                <div class="service__heading">
+                                                    <h5><a href="service-details.html">演繹統籌</a></h5>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>全面性規劃活動，從無到有發想設計，創新想法，滿足客戶需求。接洽、計畫、執行、演出，完整流程。</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1800">
+                                    <div
+                                        class="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
+                                        <div class="service__single__inner">
+                                            <div class="service__img">
+                                                <img src="img/service/service__7.png" alt="">
+
+                                            </div>
+                                            <div class="service__content">
+                                                <div class="service__heading">
+                                                    <h5><a href="service-details.html">創意設計</a></h5>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>設計、搭建規劃配置圖、音響喇叭系統圖、空間位置配置、觀眾座位配置等製作最完善的表演空間。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1800">
+                                    <div
+                                        class="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
+                                        <div class="service__single__inner">
+                                            <div class="service__img">
+                                                <img src="img/service/service__7.png" alt="">
+
+                                            </div>
+                                            <div class="service__content">
+                                                <div class="service__heading">
+                                                    <h5><a href="service-details.html">專業職人</a></h5>
+                                                </div>
+                                                <div class="service__text">
+                                                    <p>擁有經驗豐富的工程師、音控師、燈光師，服務過上萬場活動，創造一場又一場演繹佳績。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="services__projects__three" role="tabpanel"
+                        aria-labelledby="projects__three">
+                        <div class="social__wrapper">
+                            <div class="row align-items-center">
+                                <div class="video__box col-xl-4 col-lg-4 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1500">
+                                    <iframe width="100%" height="100%;"
+                                        src="https://www.youtube.com/embed/2PmFGOuY3DM?si=21pUMWZ2arr8gxtE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video__box col-xl-4 col-lg-4 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1500">
+                                    <iframe width="100%" height="100%;"
+                                        src="https://www.youtube.com/embed/2PmFGOuY3DM?si=21pUMWZ2arr8gxtE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video__box col-xl-4 col-lg-4 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1500">
+                                    <iframe width="100%" height="100%;"
+                                        src="https://www.youtube.com/embed/2PmFGOuY3DM?si=21pUMWZ2arr8gxtE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video__box col-xl-4 col-lg-4 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1500">
+                                    <iframe width="100%" height="100%;"
+                                        src="https://www.youtube.com/embed/2PmFGOuY3DM?si=21pUMWZ2arr8gxtE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video__box col-xl-4 col-lg-4 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1500">
+                                    <iframe width="100%" height="100%;"
+                                        src="https://www.youtube.com/embed/2PmFGOuY3DM?si=21pUMWZ2arr8gxtE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video__box col-xl-4 col-lg-4 col-sm-6 col-12" data-aos="fade-up"
+                                    data-aos-duration="1500">
+                                    <iframe width="100%" height="100%;"
+                                        src="https://www.youtube.com/embed/2PmFGOuY3DM?si=21pUMWZ2arr8gxtE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        <!-- services Strategy -->
+
+        <!-- footer__section__start -->
+        <div class="footer position-relative sp_top_140 pink__bg__color" id="footer__area"
+            style="background-image: url(img/footer/footer_1.png);">
+            <div class="container">
+                <div class="footer__wrapper sp_bottom_110">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                            <div class="footer__widget footer__left">
+                                <div class="footer__logo">
+                                    <img src="img/logo/winly_logo_white.svg" alt="Winly Logo" width="150" height="auto">
+                                </div>
+                                <div class="footer__text">
+                                    <p>大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容</p>
+                                </div>
+                                <div class="footer__icon">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="icofont-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-skype"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                            <div class="footer__widget footer__support">
+                                <div class="footer__menu__title">
+                                    <h6>網站地圖：</h6>
+                                </div>
+                                <div class="footer__menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">首頁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">服務項目</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">歷年實績</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">最新消息</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">聯絡我們</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                            <div class="footer__widget footer__right">
+                                <div class="footer__menu__title">
+                                    <h6>聯絡資訊</h6>
+                                </div>
+                                <div class="footer__menu">
+                                    <ul>
+                                        <li>
+                                            <a href="tel:+886227883375">電話：(+886)2 2788-3375</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.google.com/maps?q=115+台北市南港區南港路三段50巷12號5樓"
+                                                target="_blank" style="white-space:nowrap;">地址：115
+                                                台北市南港區南港路三段50巷12號5樓</a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:contact@winly.com">信箱：contact@winly.com</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="copyright__left">
+                                <p>Copyright © <span id="year"></span> <a href="#">WINLY.</a> All Right Reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="copyright__right">
+                                <ul>
+                                    <li>
+                                        <a href="#">Privacy & Policy</a>
+                                    </li>
+                                    <li>
+                                        <p>||</p>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- copyright__section__end -->
+
+    </main>
+
+    <!-- JS here -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/getwinly.js"></script>
+
+    <script>
+        // 根據網址參數切換 Tab
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const tab = urlParams.get('tab');
+
+            if (tab === 'two') {
+                const triggerTab = document.querySelector('[data-bs-target="#services__projects__two"]');
+                if (triggerTab) {
+                    triggerTab.click();
+                }
+            } else if (tab === 'three') {
+                const triggerTab = document.querySelector('[data-bs-target="#services__projects__three"]');
+                if (triggerTab) {
+                    triggerTab.click();
+                }
+            } // 預設就是 one，因此不用額外處理
+        });
+    </script>
+
+</body>
+
+</html>

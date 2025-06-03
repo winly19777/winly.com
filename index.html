@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/glightbox.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -29,6 +29,7 @@
             document.documentElement.classList.remove("is_dark");
         } 
     </script>
+    <script src="js/footer.js"></script>
 
 </head>
 
@@ -91,12 +92,12 @@
                                             <li><a class="headerarea__has__dropdown" href="index.html">首頁</a></li>
 
                                             <li class="headerarea__common__dropdown">
-                                                <a class="headerarea__has__dropdown" href="#">服務項目<i
+                                                <a class="headerarea__has__dropdown" href="services.html">服務項目<i
                                                         class="icofont-long-arrow-down"></i> </a>
                                                 <ul class="headerarea__submenu headerarea__submenu--five--wrap">
-                                                    <li><a href="#">系統整合集成</a></li>
-                                                    <li><a href="#">演繹規劃製作</a></li>
-                                                    <li><a href="#">創新數位媒體</a></li>
+                                                    <li><a href="services.html">系統整合集成</a></li>
+                                                    <li><a href="services.html?tab=two">演繹規劃製作</a></li>
+                                                    <li><a href="services.html?tab=three">創新數位媒體</a></li>
                                                 </ul>
 
                                             </li>
@@ -148,7 +149,7 @@
 
 
                                             <li><a href="#">最新消息</a></li>
-                                            <li><a href="#">聯絡我們</a></li>
+                                            <li><a href="contact.html">聯絡我們</a></li>
 
                                         </ul>
                                     </nav>
@@ -184,7 +185,7 @@
             </div>
         </header>
 
-        <!-- Start Offcanvas header menu -->
+        <!-- Start 手機板 header menu -->
         <div class="offcanvas__header">
             <div class="offcanvas__inner">
                 <div class="offcanvas__logo">
@@ -193,16 +194,16 @@
                 <nav class="offcanvas__menu">
                     <ul class="offcanvas__menu_ul">
                         <li class="offcanvas__menu_li">
-                            <a class="offcanvas__menu_item" href="#">首頁</a>
+                            <a class="offcanvas__menu_item" href="index.html">首頁</a>
                         </li>
                         <li class="offcanvas__menu_li">
-                            <a class="offcanvas__menu_item" href="#">服務項目</a>
+                            <a class="offcanvas__menu_item" href="services.html">服務項目</a>
                             <ul class="offcanvas__sub_menu">
-                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                <li class="offcanvas__sub_menu_li"><a href="services.html"
                                         class="offcanvas__sub_menu_item">系統整合集成</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=two"
                                         class="offcanvas__sub_menu_item">演繹規畫製作</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=three"
                                         class="offcanvas__sub_menu_item">創新數位媒體</a></li>
                             </ul>
                         </li>
@@ -252,16 +253,16 @@
                                         data-aos-duration="1500">
                                         <div class="herobanner__content__wrapper">
                                             <div class="herobanner__title">
-                                                <h1>標題1標題1標題1</h1>
+                                                <h1>標題1標題1</h1>
                                             </div>
                                             <div class="herobanner__text">
                                                 <p>內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1內容1
                                                 </p>
                                             </div>
-                                            <div class="herobanner__button">
+                                            <!-- <div class="herobanner__button">
                                                 <a class="default__button" href="#">立即加入 <i
                                                         class="icofont-caret-right"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <!-- 人物隱藏 -->
@@ -284,10 +285,10 @@
                                             <div class="herobanner__text">
                                                 <p>內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
                                             </div>
-                                            <div class="herobanner__button">
+                                            <!-- <div class="herobanner__button">
                                                 <a class="default__button" href="#">立即加入 <i
                                                     class="icofont-caret-right"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <!-- 人物隱藏 -->
@@ -310,10 +311,10 @@
                                             <div class="herobanner__text">
                                                 <p>內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
                                             </div>
-                                            <div class="herobanner__button">
+                                            <!-- <div class="herobanner__button">
                                                 <a class="default__button" href="#">立即加入 <i
                                                     class="icofont-caret-right"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <!-- 人物隱藏 -->
@@ -326,7 +327,8 @@
                             </div>
 
                         </div>
-                        <div
+                        <!-- 箭頭隱藏 -->
+                        <!-- <div
                             class="slider__controls__wrap slider__controls__pagination slider__controls__arrows herobanner__arrow__1">
                             <div class="swiper-button-next arrow-btn">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -347,8 +349,8 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <!-- <div class="swiper-pagination"></div> -->
-                        </div>
+                             <div class="swiper-pagination"></div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -400,9 +402,15 @@
                                     <h3>穩立成立於<span class="text__gradient">1977</span>年 </h3>
                                 </div>
                                 <div class="section__title__text">
-                                    <p>我們相信，品牌是我們最有價值的資產。用<span style="color: var(--themeColor-Orange);">聲</span>經營，用<span style="color: var(--themeColor-Orange);">心</span>聆聽 ，穩立堅持<span style="color: var(--themeColor-Orange);">聲音</span>的美感，打造視覺的動感。 
+                                    <p>我們相信，品牌是我們最有價值的資產。用<span
+                                            style="color: var(--themeColor-Orange);">聲</span>經營，用<span
+                                            style="color: var(--themeColor-Orange);">心</span>聆聽 ，穩立堅持<span
+                                            style="color: var(--themeColor-Orange);">聲音</span>的美感，打造視覺的動感。
                                         頂級設備的聽覺饗宴，完善訓練的技術支援 ；打造心中的感動，記憶不同的覺美感受。
-                                        這份理想讓穩立秉持著不凡的見解與目標，堅持<span style="color: var(--themeColor-Orange);">聲聲</span>精彩用<span style="color: var(--themeColor-Orange);">心</span>深具意義的承諾，珍惜感恩每個承諾使得穩立永續精實成長。</p>
+                                        這份理想讓穩立秉持著不凡的見解與目標，堅持<span
+                                            style="color: var(--themeColor-Orange);">聲聲</span>精彩用<span
+                                            style="color: var(--themeColor-Orange);">心</span>深具意義的承諾，珍惜感恩每個承諾使得穩立永續精實成長。
+                                    </p>
                                 </div>
                             </div>
                             <div class="about__misson">
@@ -686,7 +694,9 @@
 
                             <div class="section__title section__title--2">
                                 <div class="section__title__heading">
-                                    <h3 class="mb-0">代理品牌代理品牌 <span class="text__unerline">HK</span>、<span class="text__unerline">VOID</span>、<span class="text__unerline">Sommer</span> 知名廠牌代理 </h3>
+                                    <h3 class="mb-0">代理品牌代理品牌 <span class="text__unerline">HK</span>、<span
+                                            class="text__unerline">VOID</span>、<span
+                                            class="text__unerline">Sommer</span> 知名廠牌代理 </h3>
                                 </div>
                             </div>
 
@@ -718,9 +728,8 @@
                                         <h3><a href="#">HK audio</a></h3>
                                     </div>
                                     <div class="project__icon">
-                                        <a class="direction__btn" href="#"><svg width="34"
-                                                height="34" viewBox="0 0 34 34" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                        <a class="direction__btn" href="#"><svg width="34" height="34"
+                                                viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
                                                     stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
                                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -772,9 +781,8 @@
                                         <h3><a href="#">Sommer cable</a></h3>
                                     </div>
                                     <div class="project__icon">
-                                        <a class="direction__btn" href="#"><svg width="34"
-                                                height="34" viewBox="0 0 34 34" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                        <a class="direction__btn" href="#"><svg width="34" height="34"
+                                                viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
                                                     stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
                                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -834,7 +842,93 @@
                         </div>
                     </div>
                 </div>
-                <div class="masonry">class="border__gallery" data-tilt</div>
+                <!-- owl.carousel -->
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/10/400/600" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/14/400/500" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/15/400/450" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/16/400/550" alt="Image 1">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/17/400/350" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/19/400/500" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/37/400/450" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/39/400/550" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="history__img">
+                            <a href="#" data-bs-target="#historyModalToggle" data-bs-toggle="modal"
+                               onclick="historyImgClick(this.parentElement.querySelector('img').src)">
+                                <i class="icofont-expand"></i>
+                            </a>
+                            <img src="https://picsum.photos/id/85/400/400" alt="Image 1">
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <!-- 歷年實績__end -->
@@ -844,12 +938,12 @@
             <div class="container">
                 <div class="facts__inner" id="funfactId">
                     <div class="facts__single text-center" data-aos="fade-up" data-aos-duration="1500">
-                       <div class="facts__single__counter">
-                        <div class="counter__number">
-                            <span class="counter js-counter" data-count="835">835</span>+
+                        <div class="facts__single__counter">
+                            <div class="counter__number">
+                                <span class="counter js-counter" data-count="835">835</span>+
+                            </div>
+                            <p>舉辦演唱會</p>
                         </div>
-                        <p>舉辦演唱會</p>
-                       </div>
                     </div>
                     <div class="facts__single" data-aos="fade-up" data-aos-duration="1800">
                         <img src="img/brand/brand__3.png" alt="">
@@ -860,7 +954,7 @@
                                 <span class="counter js-counter" data-count="6246">6246</span>+
                             </div>
                             <p>完成工程案</p>
-                           </div>
+                        </div>
                     </div>
                     <div class="facts__single" data-aos="fade-up" data-aos-duration="2200">
                         <img src="img/brand/brand__3.png" alt="">
@@ -871,7 +965,7 @@
                                 <span class="counter js-counter" data-count="2000">2000</span>+
                             </div>
                             <p>客戶滿意度</p>
-                           </div>
+                        </div>
                     </div>
                     <div class="facts__single" data-aos="fade-up" data-aos-duration="2600">
                         <img src="img/brand/brand__3.png" alt="">
@@ -882,11 +976,11 @@
                                 <span class="counter js-counter" data-count="60">60</span>+
                             </div>
                             <p>服務總數</p>
-                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
         <!-- 服務客戶計數__end -->
 
         <!-- 最新消息__start -->
@@ -906,7 +1000,7 @@
                 <div class="blog__main__wrapper">
 
                     <div class="blog__single" data-aos="fade-up" data-aos-duration="1500">
-                        <div class="blog__img">
+                        <div class=" blog__img">
                             <img src="img/blog/blog__1.png" alt="">
                         </div>
                         <div class=" blog__date">
@@ -920,8 +1014,8 @@
                             <p>內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
                         </div>
                         <div class="blog__icon">
-                            <a class="direction__btn" href="#"><svg width="34" height="34"
-                                    viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a class="direction__btn" href="#"><svg width="34" height="34" viewBox="0 0 34 34"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
                                         stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -947,8 +1041,8 @@
                             <p>內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
                         </div>
                         <div class="blog__icon left">
-                            <a class="direction__btn" href="#"><svg width="34" height="34"
-                                    viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a class="direction__btn" href="#"><svg width="34" height="34" viewBox="0 0 34 34"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
                                         stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -974,8 +1068,8 @@
                             <p>內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
                         </div>
                         <div class="blog__icon">
-                            <a class="direction__btn" href="#"><svg width="34" height="34"
-                                    viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a class="direction__btn" href="#"><svg width="34" height="34" viewBox="0 0 34 34"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
                                         stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -997,151 +1091,141 @@
         <!-- 最新消息__end -->
 
 
-
-        <!-- footer__section__start -->
-        <div class="footer position-relative sp_top_140 pink__bg__color" id="footer__area"
-            style="background-image: url(img/footer/footer_1.png);">
-
-            <!-- <div class="bastun__brand__badge bastun__brand__badge__footer">
-                <div class="bastun__brand__badge__inner position-relative">
-                    <a href="index.html">
-
-                        <img class="bbb__animate" src="img/footer/brand__badge.png" alt="Footer badge">
-                        <img class="bbb__icon" src="img/footer/brand__badge__inner.png" alt="Footer icon badge">
-                    </a>
-                </div>
-            </div> -->
-
-            <div class="container">
-                <div class="footer__wrapper sp_bottom_110">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1500">
-                            <div class="footer__widget footer__left">
-                                <div class="footer__logo">
-                                    <img src="img/logo/winly_logo_white.svg" alt="Winly Logo" width="150" height="auto">
-                                </div>
-                                <div class="footer__text">
-                                    <p>大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容</p>
-                                </div>
-                                <div class="footer__icon">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="icofont-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="icofont-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="icofont-skype"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="icofont-linkedin"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="footer__widget footer__support">
-                                <div class="footer__menu__title">
-                                    <h6>網站地圖：</h6>
-                                </div>
-                                <div class="footer__menu">
-                                    <ul>
-                                        <li>
-                                            <a href="#">首頁</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">服務項目</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">歷年實績</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">最新消息</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">聯絡我們</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2500">
-                            <div class="footer__widget footer__quick">
-                                <div class="footer__menu__title">
-                                    <h6> </h6>
-                                </div>
-                                <div class="footer__menu">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Privacy & policy</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Terms & conditions</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">FAQ</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
-                            <div class="footer__widget footer__right">
-                                <div class="footer__menu__title">
-                                    <h6>聯絡資訊</h6>
-                                </div>
-                                <div class="footer__menu">
-                                    <ul>
-                                        <li>
-                                            <a href="#">電話：(+886)2 2788-3375</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">地址：115 台北市南港區南港路三段50巷12號5樓</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">信箱：contact@winly.com></a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="copyright">
-
-                    <div class="row align-items-center">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                            <div class="copyright__left">
-                                <p>Copyright © <span id="year"></span> <a href="#">WINLY.</a> All Right Reserved</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                            <div class="copyright__right">
-                                <ul>
-                                    <li>
-                                        <a href="#">Privacy & Policy</a>
-                                    </li>
-                                    <li><p>||</p></li>
-                                    <li>
-                                        <a href="#">Terms & Conditions</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
+        <!-- 圖片 Modal -->
+        <div class="modal fade" id="historyModalToggle" aria-hidden="true" aria-labelledby="historyModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" id="testClick1">
                 </div>
             </div>
         </div>
-        <!-- footer__section__end -->
+        <script>
+            function historyImgClick(imgSrc) {
+                document.getElementById("testClick1").innerHTML = `<img src="` + imgSrc + `" class="img-fluid" alt="Responsive image">`;
+            }
+        </script>
+        <!-- 圖片 Modal__end -->
 
+        <!-- footer__section__start -->
+        <footer id="">
+            <div class="footer position-relative sp_top_140 pink__bg__color" id="footer__area"
+                style="background-image: url(img/footer/footer_1.png);">
+                <div class="container">
+                    <div class="footer__wrapper sp_bottom_110">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="fade-up"
+                                data-aos-duration="1500">
+                                <div class="footer__widget footer__left">
+                                    <div class="footer__logo">
+                                        <img src="img/logo/winly_logo_white.svg" alt="Winly Logo" width="150"
+                                            height="auto">
+                                    </div>
+                                    <div class="footer__text">
+                                        <p>大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容大概介紹穩立公司的內容</p>
+                                    </div>
+                                    <div class="footer__icon">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="icofont-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icofont-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icofont-skype"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="icofont-linkedin"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12" data-aos="fade-up"
+                                data-aos-duration="2000">
+                                <div class="footer__widget footer__support">
+                                    <div class="footer__menu__title">
+                                        <h6>網站地圖：</h6>
+                                    </div>
+                                    <div class="footer__menu">
+                                        <ul>
+                                            <li>
+                                                <a href="#">首頁</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">服務項目</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">歷年實績</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">最新消息</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">聯絡我們</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12" data-aos="fade-up"
+                                data-aos-duration="3000">
+                                <div class="footer__widget footer__right">
+                                    <div class="footer__menu__title">
+                                        <h6>聯絡資訊</h6>
+                                    </div>
+                                    <div class="footer__menu">
+                                        <ul>
+                                            <li>
+                                                <a href="tel:+886227883375">電話：(+886)2 2788-3375</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.google.com/maps?q=115+台北市南港區南港路三段50巷12號5樓"
+                                                    target="_blank" style="white-space:nowrap;">地址：115
+                                                    台北市南港區南港路三段50巷12號5樓</a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:contact@winly.com">信箱：contact@winly.com</a>
+                                            </li>
 
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+
+                        <div class="row align-items-center">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                                <div class="copyright__left">
+                                    <p>Copyright © <span id="year"></span> <a href="#">WINLY.</a> All Right Reserved</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                                <div class="copyright__right">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Privacy & Policy</a>
+                                        </li>
+                                        <li>
+                                            <p>||</p>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms & Conditions</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- copyright__section__end -->
 
     </main>
 
@@ -1150,6 +1234,8 @@
 
 
     <!-- JS here -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/glightbox.min.js"></script>
@@ -1157,17 +1243,27 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/getwinly.js"></script>
-
     <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-            document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
-        }
-        if (localStorage.getItem("theme-color") === "light") {
-            document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
-        } 
-    </script>
+        $(".owl-carousel").owlCarousel({
+            loop: true, // 循環播放
+            margin: 10, // 外距 10px
+            nav: true, // 顯示點點
+            stagePadding: 50,
+            autoHeight: true, // 自動高度
+            responsive: {
+                0: {
+                    items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+                },
+                600: {
+                    items: 3 // 螢幕大小為 600~1000 顯示 3 個項目
+                },
+                1000: {
+                    items: 5 // 螢幕大小為 1000 以上 顯示 5 個項目
+                }
+            }
+        });
 
+    </script>
 </body>
 
 </html>

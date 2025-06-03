@@ -1421,6 +1421,7 @@ button.default__button {
   -webkit-text-fill-color: transparent;
   background: var(--gradientColor);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .text__unerline {
@@ -2055,19 +2056,13 @@ button.default__button {
 .mode_switcher.my_switcher {
   position: fixed;
   right: -50px;
-  top: 100px;
+  top: 90%;
   z-index: 9999999;
   transition: 0.3s;
 }
 
 .mode_switcher.my_switcher:hover {
   right: 0;
-}
-
-@media (min-width: 1500px) and (max-width: 1920px) {
-  .mode_switcher.my_switcher {
-    top: 300px;
-  }
 }
 
 .mode_switcher.my_switcher button {
@@ -4439,6 +4434,21 @@ button.default__button {
   }
 }
 
+.history__img{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.history__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.history__img>a>i {
+ position: absolute;
+ right: 10px;
+ top: 10px;
+}
 .service {
   position: relative;
   background-color: var(--pinkcolor);
@@ -4514,6 +4524,16 @@ button.default__button {
 
 .service__img {
   margin-bottom: 25px;
+  margin: 25px;
+  text-align: justify;
+  text-align-last: justify;
+}
+@media (min-width: 1200px) {
+  .service__img {
+    padding: 5px;
+  margin: auto -20px;
+      }
+  
 }
 
 .service__img img {
@@ -4841,6 +4861,15 @@ button.default__button {
 .service__single__wraper:hover .service__icon a.direction__btn--2:hover {
   background: var(--whiteColor);
 }
+
+.service__icon__inner{
+  background-color:white;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+
 
 .service__details__img {
   margin-bottom: 25px;
@@ -5428,6 +5457,13 @@ button.default__button {
   left: 79%;
 }
 
+.video__box {
+  aspect-ratio: 16 / 9 auto;
+  position: relative; 
+  overflow: hidden;
+  border-radius: var(--borderRadius);
+  margin: 8px auto;
+}
 /*--
     - Animation keyframes
 -----------------------------------------*/
@@ -5442,6 +5478,20 @@ button.default__button {
 
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
 
@@ -6609,6 +6659,7 @@ button.default__button {
 
 @media (max-width: 767px) {
   .blog__single {
+    width: 100%;
     flex-wrap: wrap;
   }
 }
@@ -6777,7 +6828,8 @@ button.default__button {
 
 @media (max-width: 767px) {
   .blog__img {
-    margin-right: 20px;
+    width: 100%;
+    margin-right: auto;
     margin-bottom: 30px;
   }
 }
@@ -6808,6 +6860,7 @@ button.default__button {
   .blog__content {
     margin-right: 20px;
     margin-bottom: 30px;
+    width: 55%;
   }
 }
 
@@ -9358,7 +9411,11 @@ button.default__button {
     flex-wrap: nowrap;
   }
 }
-
+.pricing__tab__link{transform: translateY(0);
+    animation: color 3s ease-in-out infinite alternate;}
+.pricing__tab__link:hover {transform: translateY(-10px);
+    animation: color 3s ease-in-out infinite alternate;
+}
 .pricing__single {
   background: var(--whiteColor);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
@@ -9993,19 +10050,19 @@ button.default__button {
 
 @media (min-width: 992px) and (max-width: 1365px) {
   .breadcrumbarea {
-    padding: 50px 0;
+    padding: 100px 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .breadcrumbarea {
-    padding: 50px 0;
+    padding: 100px 0;
   }
 }
 
 @media (max-width: 767px) {
   .breadcrumbarea {
-    padding: 50px 0;
+    padding: 80px 0;
   }
 }
 
@@ -12110,7 +12167,7 @@ Grid Area
   padding-left: 50px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .footer__support {
     padding-left: 0px;
     margin-top: 30px;
@@ -12238,7 +12295,7 @@ Grid Area
   padding-left: 70px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .footer__right {
     padding-left: 0px;
     margin-top: 30px;
