@@ -29,7 +29,7 @@
             document.documentElement.classList.remove("is_dark");
         } 
     </script>
-    <script src="js/footer.js"></script>
+    <!-- <script src="js/footer.js"></script> -->
 
 </head>
 
@@ -95,15 +95,15 @@
                                                 <a class="headerarea__has__dropdown" href="services.html">服務項目<i
                                                         class="icofont-long-arrow-down"></i> </a>
                                                 <ul class="headerarea__submenu headerarea__submenu--five--wrap">
-                                                    <li><a href="services.html">系統整合集成</a></li>
-                                                    <li><a href="services.html?tab=two">演繹規劃製作</a></li>
-                                                    <li><a href="services.html?tab=three">創新數位媒體</a></li>
+                                                    <li><a href="services.html?tab=系統整合集成">系統整合集成</a></li>
+                                                    <li><a href="services.html?tab=演繹規劃製作">演繹規劃製作</a></li>
+                                                    <li><a href="services.html?tab=創新數位媒體">創新數位媒體</a></li>
                                                 </ul>
 
                                             </li>
                                             <li
                                                 class="headerarea__common__dropdown headerarea__mega__menu position-static">
-                                                <a class="headerarea__has__dropdown" href="#">歷年實績<i
+                                                <a class="headerarea__has__dropdown" href="project.html">歷年實績<i
                                                         class="icofont-long-arrow-down"></i></a>
                                                 <div class="headerarea__submenu headerarea__mega__menu__wrapper">
                                                     <div class="row">
@@ -199,16 +199,16 @@
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="services.html">服務項目</a>
                             <ul class="offcanvas__sub_menu">
-                                <li class="offcanvas__sub_menu_li"><a href="services.html"
+                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=系統整合集成"
                                         class="offcanvas__sub_menu_item">系統整合集成</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=two"
+                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=演繹規畫製作"
                                         class="offcanvas__sub_menu_item">演繹規畫製作</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=three"
+                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=創新數位媒體"
                                         class="offcanvas__sub_menu_item">創新數位媒體</a></li>
                             </ul>
                         </li>
                         <li class="offcanvas__menu_li">
-                            <a class="offcanvas__menu_item" href="#">歷年實績</a>
+                            <a class="offcanvas__menu_item" href="project.html">歷年實績</a>
                             <ul class="offcanvas__sub_menu">
                                 <li class="offcanvas__sub_menu_li"><a href="#"
                                         class="offcanvas__sub_menu_item">演繹規畫製作</a></li>
@@ -227,7 +227,7 @@
                                         class="offcanvas__sub_menu_item">Sommer</a></li>
                             </ul>
                         </li>
-                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.html">最新消息</a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#">最新消息</a></li>
                         <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.html">聯絡我們</a>
                         </li>
                     </ul>
@@ -1250,6 +1250,9 @@
             nav: true, // 顯示點點
             stagePadding: 50,
             autoHeight: true, // 自動高度
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true, // 滑鼠懸停暫停自動播放
             responsive: {
                 0: {
                     items: 1 // 螢幕大小為 0~600 顯示 1 個項目

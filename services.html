@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="zh-Hant-TW">
 
 <head>
     <meta charset="utf-8">
@@ -82,15 +82,15 @@
                                                 <a class="headerarea__has__dropdown" href="services.html">服務項目<i
                                                         class="icofont-long-arrow-down"></i> </a>
                                                 <ul class="headerarea__submenu headerarea__submenu--five--wrap">
-                                                    <li><a href="services.html">系統整合集成</a></li>
-                                                    <li><a href="services.html?tab=two">演繹規劃製作</a></li>
-                                                    <li><a href="services.html?tab=three">創新數位媒體</a></li>
+                                                    <li><a href="services.html?tab=系統整合集成">系統整合集成</a></li>
+                                                    <li><a href="services.html?tab=演繹規劃製作">演繹規劃製作</a></li>
+                                                    <li><a href="services.html?tab=創新數位媒體">創新數位媒體</a></li>
                                                 </ul>
 
                                             </li>
                                             <li
                                                 class="headerarea__common__dropdown headerarea__mega__menu position-static">
-                                                <a class="headerarea__has__dropdown" href="#">歷年實績<i
+                                                <a class="headerarea__has__dropdown" href="project.html">歷年實績<i
                                                         class="icofont-long-arrow-down"></i></a>
                                                 <div class="headerarea__submenu headerarea__mega__menu__wrapper">
                                                     <div class="row">
@@ -188,16 +188,16 @@
                         <li class="offcanvas__menu_li">
                             <a class="offcanvas__menu_item" href="services.html">服務項目</a>
                             <ul class="offcanvas__sub_menu">
-                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=系統整合集成"
                                         class="offcanvas__sub_menu_item">系統整合集成</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=演繹規畫製作"
                                         class="offcanvas__sub_menu_item">演繹規畫製作</a></li>
-                                <li class="offcanvas__sub_menu_li"><a href=""
+                                <li class="offcanvas__sub_menu_li"><a href="services.html?tab=創新數位媒體"
                                         class="offcanvas__sub_menu_item">創新數位媒體</a></li>
                             </ul>
                         </li>
                         <li class="offcanvas__menu_li">
-                            <a class="offcanvas__menu_item" href="#">歷年實績</a>
+                            <a class="offcanvas__menu_item" href="project.html">歷年實績</a>
                             <ul class="offcanvas__sub_menu">
                                 <li class="offcanvas__sub_menu_li"><a href="#"
                                         class="offcanvas__sub_menu_item">演繹規畫製作</a></li>
@@ -248,8 +248,7 @@
         <!-- breadcrumbarea__end -->
 
         <!-- 服務項目 Strategy -->
-        <div class="pricing business__strategy sp_top_120 sp_bottom_120 special__spacing"
-            style="background: url(img/service/service__bg__3.png);">
+        <div class="pricing business__strategy sp_top_120 sp_bottom_120 special__spacing">
             <div class="container">
                 <!-- <div class="row">
                     <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
@@ -310,7 +309,7 @@
                                     data-aos-duration="1800">
 
                                     <div class="service__single__inner">
-                                        <div class="service__img">
+                                        <div class="service__img" style="margin: auto -20px;">
                                             <img class="service__icon__inner" src="img/service/images/icon_01.png"
                                                 alt="">
                                             <img class="service__icon__inner" src="img/service/images/icon_03.png"
@@ -678,12 +677,12 @@
             const urlParams = new URLSearchParams(window.location.search);
             const tab = urlParams.get('tab');
 
-            if (tab === 'two') {
+            if (tab === '演繹規劃製作') {
                 const triggerTab = document.querySelector('[data-bs-target="#services__projects__two"]');
                 if (triggerTab) {
                     triggerTab.click();
                 }
-            } else if (tab === 'three') {
+            } else if (tab === '創新數位媒體') {
                 const triggerTab = document.querySelector('[data-bs-target="#services__projects__three"]');
                 if (triggerTab) {
                     triggerTab.click();
